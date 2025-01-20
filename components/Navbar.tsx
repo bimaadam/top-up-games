@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import LogoRB from './LogoRB';
 
 const Navbar = () => {
   return (
@@ -26,12 +27,7 @@ const Navbar = () => {
       {/* Logo dan Nama */}
       <div className="flex-1 flex items-center gap-2">
         <Link href="/">
-          <img
-            src="assets/icon/Dark Mode RB icon.svg"
-            className="w-10 h-10 sm:w-12 sm:h-12"
-            alt="RB Games Logo"
-            
-          />
+        <LogoRB />
         </Link>
         <span className="font-bold text-xl">RB Games</span>
       </div>
