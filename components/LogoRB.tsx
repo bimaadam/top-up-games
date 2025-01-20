@@ -1,7 +1,7 @@
 const LogoRB = () => {
     return (
       <img
-        className="h-16 sm:h-20 lg:h-28 min-h-min"
+        className="h-14 lg:h-28 sm:h-14"
         src="assets/icon/Dark Mode RB Icon.svg"
         alt="Logo RB games"
       />
