@@ -28,9 +28,9 @@ const Menu = () => {
               </figure>
               <div className="card-body">
                 <h2 className="card-title text-sm">{game.name}</h2>
-                <button className="btn btn-primary btn-sm w-full">
+                <a href='/pilih-item' className="btn btn-primary btn-sm w-full">
                   Top Up
-                </button>
+                </a>
               </div>
             </div>
           ))}
