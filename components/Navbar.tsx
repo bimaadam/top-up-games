@@ -1,8 +1,16 @@
+'use client';
+
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import LogoRB from './LogoRB';
 
 const Navbar = () => {
+  const [showInput, setShowInput] = useState(false);
+
+  const toggleSearchInput = () => {
+    setShowInput((prev) => !prev);
+  };
+
   return (
     <div className="navbar bg-base-100 px-4 sm:px-8">
       {/* Bagian Kiri */}
@@ -27,19 +35,19 @@ const Navbar = () => {
       {/* Logo dan Nama */}
       <div className="flex-1 flex items-center gap-2">
         <Link href="/">
-        <LogoRB />
+          <LogoRB />
         </Link>
         <span className="font-bold text-xl">RB Games</span>
       </div>
 
       {/* Tombol Search untuk Mobile */}
       <div className="block sm:hidden">
-        <button className="btn btn-square btn-ghost">
+        <button className="btn btn-square btn-ghost" onClick={toggleSearchInput}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 16 16"
-            className="h-5 w-5 stroke-current"
+            className="h-5 sm:w-4 mt-1 stroke-current"
           >
             <path
               fillRule="evenodd"
@@ -49,6 +57,17 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
+
+      {/* Search Input untuk Mobile */}
+      {showInput && (
+        <div className="block sm:hidden">
+          <input
+            type="text"
+            placeholder="Search..."
+            className="input input-xs input-bordered mt-0 px-1 py-5"
+          />
+        </div>
+      )}
 
       {/* Search Bar untuk Desktop */}
       <div className="hidden sm:block">

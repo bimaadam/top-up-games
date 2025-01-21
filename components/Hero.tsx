@@ -1,4 +1,6 @@
+import { motion } from 'framer-motion';
 import React from 'react';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -7,8 +9,8 @@ const Hero = () => {
       <div className="hero-content flex-col lg:flex-row text-center lg:text-left text-white">
         {/* Gambar Samping */}
         <img
-          src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-          className="max-w-sm rounded-lg shadow-2xl hidden lg:block"
+          src="assets/img/hero.jpg"
+          className="max-w-sm w-64 rounded-lg shadow-2xl hidden lg:block"
           alt="Hero Image"
         />
         {/* Konten Text */}
@@ -18,7 +20,12 @@ const Hero = () => {
             Nikmati promo spesial dan diskon menarik setiap hari. Top up game favoritmu dengan harga murah dan proses cepat!
           </p>
           {/* Tombol CTA */}
-          <button className="btn btn-primary btn-lg rounded-full px-8">Top Up Sekarang</button>
+          <Link href='#menu'>
+          <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="btn btn-primary btn-lg rounded-full px-8">Top Up Sekarang 🚀</motion.button>
+          </Link>
         </div>
       </div>
     </div>
