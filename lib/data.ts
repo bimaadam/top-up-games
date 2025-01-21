@@ -1,3 +1,5 @@
+import { code } from "framer-motion/client";
+
 export const diamonds = [
   { id: 1, amount: '50 Diamond', price: 'Rp10.000' },
   { id: 2, amount: '100 Diamond', price: 'Rp20.000' },
@@ -31,6 +33,7 @@ export const games = [
     name: 'Mobile Legends',
     image: 'assets/icon/ML-icon.jpg',
     description: 'Top up Diamond Mobile Legends sekarang juga!',
+    code: 'mobilelegend',
     isNew: true, // flag "New"
   },
   {
@@ -38,6 +41,7 @@ export const games = [
     name: 'Free Fire',
     image: 'assets/icon/FF-icon.jpg', 
     description: 'Top up Diamond Free Fire untuk skin favoritmu!',
+    code: 'freefire',
     isNew: true,
   },
   {
