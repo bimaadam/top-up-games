@@ -33,7 +33,7 @@ export const games = [
     name: 'Mobile Legends',
     image: 'assets/icon/ML-icon.jpg',
     description: 'Top up Diamond Mobile Legends sekarang juga!',
-    code: 'mobilelegend',
+    code: 'Mobile Legend',
     isNew: true, // flag "New"
   },
   {
@@ -41,7 +41,7 @@ export const games = [
     name: 'Free Fire',
     image: 'assets/icon/FF-icon.jpg', 
     description: 'Top up Diamond Free Fire untuk skin favoritmu!',
-    code: 'freefire',
+    code: 'Free Fire',
     isNew: true,
   },
   {
@@ -49,7 +49,8 @@ export const games = [
     name: 'PUBG Mobile',
     image: 'assets/icon/PUBG-icon.jpg', 
     description: 'Top up UC PUBG Mobile untuk senjata keren!',
-    isNew: false,
+    code: 'PUBG Mobile',
+    isNew: false
   },
   {
     id: 4,
@@ -57,5 +58,6 @@ export const games = [
     image: 'assets/icon/GI-icon.jpg', 
     description: 'Top up Genesis Crystal Genshin Impact sekarang!',
     isNew: false,
+    code: 'Genshin Impact'
   },
 ];
